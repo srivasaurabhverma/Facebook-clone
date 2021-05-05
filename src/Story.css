@@ -32,8 +32,9 @@
 @media only screen and (max-width: 809px) {
   .Story {
     width: 21vw;
-    height: 33vh;
+    height: 24vh;
     margin: 0 5px 3px 4px;
+    /* overflow: scroll; */
   }
 
   .Story h4 {
