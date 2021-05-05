@@ -1,0 +1,12 @@
+.StoryReel {
+  display: flex;
+  margin: 1px 2px;
+}
+
+@media only screen and (max-width: 809px) {
+  .StoryReel {
+    width: 100vw;
+    position: relative;
+    left: 2vw;
+  }
+}

@@ -1,0 +1,163 @@
+.Header {
+  top: 0;
+  padding: 1.1% 0.9%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.Header_left {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Header_input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.Header_left > img {
+  height: 40px;
+}
+
+.Header_input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.Header_middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.Header_option > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.Header_option:hover > .MuiSvgIcon-root {
+  color: rgb(14, 143, 248);
+}
+
+.Header_option {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.Header_option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+.Header_info {
+  display: flex;
+  align-items: center;
+}
+
+.Header_info > h4 {
+  margin-left: 4px;
+}
+
+.Header_right {
+  display: flex;
+}
+
+.Header_option--active > .MuiSvgIcon-root {
+  color: rgb(14, 143, 248);
+}
+
+.Header_option--active {
+  border-bottom: 4px solid rgb(14, 143, 248);
+}
+@media only screen and (max-width: 1170px) and (min-width: 810px) {
+  .Header_option {
+    padding: 0px 12px;
+  }
+
+  .Header_option:hover {
+    padding: 0px 12px;
+  }
+
+  .Header_right {
+    margin-left: 2px;
+  }
+}
+
+@media only screen and (max-width: 809px) {
+  .Header_middle {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -4vw;
+    top: 6vh;
+    height: fit-content;
+  }
+  .Header {
+    height: 12vh;
+    padding: 0 0 0 0;
+    width: 120vw;
+    overflow: hidden;
+  }
+
+  .Header_left {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .Header_option:hover {
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    cursor: pointer;
+    margin-left: 4vw;
+  }
+
+  .Header_option {
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    cursor: pointer;
+    margin-left: 3.4vw;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .Header_input > input {
+    display: none;
+  }
+  .Header_right {
+    visibility: hidden;
+  }
+  .Header_middle {
+    flex: none;
+  }
+  .Header_left > img {
+    position: relative;
+    top: 0;
+    left: 2vw;
+    width: 38px;
+  }
+  .Header_left {
+    /* background-color: black; */
+    width: 37vw;
+    position: relative;
+    top: -2vh;
+  }
+
+  .Header_input {
+    display: none;
+  }
+}

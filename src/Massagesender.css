@@ -1,0 +1,81 @@
+.Massagesender {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.075);
+  width:  100%;
+}
+.Massagesender_top {
+  display: flex;
+  border-bottom: 1px solid #eff2f5;
+  padding-bottom: 15px;
+  padding: 15px;
+}
+
+.Massagesender_top > form {
+  flex: 1;
+  display: flex;
+}
+
+.Massagesender_top > form > input {
+  outline-width: 0;
+  border: none;
+  padding: 5px 20px;
+  margin: 0px 10px;
+  border-radius: 999px;
+  background-color: #eff2f5;
+}
+
+.Massagesender_top > form > button {
+  visibility: hidden;
+}
+.Massagesender_input{
+    flex:1;
+}
+.Massagesender_bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Massagesender_option{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: grey;
+    margin: 5px;
+}
+
+.Massagesender_option > h3{
+    font-size: medium;
+    margin-left: 10px;
+}
+.Massagesender_option :hover{
+  background-color: #eff2f5;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 809px){
+  .Massagesender_input{
+    flex:none;
+  }
+  .Massagesender_top input{
+    flex: none;
+  }
+  .Massagesender_top > form > input{
+    width: 27%;
+  }
+  .Massagesender_top > form > input:placeholder-shown{
+    font-size:  x-small;
+    font-weight: 500;
+  }
+  .Massagesender_option{
+    margin: 3.4px;
+    padding: 0 0;
+  }
+  .Massagesender_option > h3 {
+    font-size: small;
+  }
+}
