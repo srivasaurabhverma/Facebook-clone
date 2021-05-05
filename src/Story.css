@@ -33,6 +33,7 @@
   .Story {
     width: 21vw;
     height: 24vh;
+    
     margin: 0 5px 3px 4px;
     /* overflow: scroll; */
   }
